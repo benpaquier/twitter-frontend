@@ -24,8 +24,8 @@ const LoginForm = () => {
 
   const { values, errors, handleSubmit, handleChange } = useFormik({
     initialValues: {
-      username: 'benoit',
-      password: 'temptemp'
+      username: '',
+      password: ''
     },
     onSubmit: async (values, { setFieldError }) => {
       try {
